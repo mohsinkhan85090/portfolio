@@ -2,7 +2,6 @@
 
 
 </p><!-- Profile Photo -->
-![Mohsin Khan](assets/mohsin.jpg)
 
 # Mohsin Khan — AI/ML & Software Developer
 <p align="center">
