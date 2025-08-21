@@ -1,24 +1,38 @@
-/* DSA section cards like Projects */
+/* DSA Section Cards */
 .dsa-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 18px;
-  margin-top: 22px;
-  justify-items: center; /* ensures cards are centered */
+  gap: 20px; /* slightly bigger gap for breathing space */
+  margin-top: 24px;
+  justify-items: center;
 }
 
-/* Optional: match Projects hover effects */
+/* Card Styling */
 .dsa-cards .card {
-  background: var(--card);
-  border: 1px solid rgba(255,255,255,.08);
-  border-radius: 18px;
-  padding: 16px;
+  background: var(--card); /* consistent theme */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px; /* slightly smoother */
+  padding: 18px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  transition: transform .15s ease, border-color .2s ease;
+  gap: 14px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* subtle shadow */
+  transition: 
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
+
+/* Hover Effects */
 .dsa-cards .card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(124,92,255,.45);
+  transform: translateY(-5px);
+  border-color: rgba(124, 92, 255, 0.45);
+  box-shadow: 0 10px 20px rgba(124, 92, 255, 0.15); /* glowing effect */
+}
+
+/* Optional: smooth inner elements appearance on hover */
+.dsa-cards .card:hover * {
+  transition: color 0.25s ease, transform 0.25s ease;
 }
