@@ -1,4 +1,4 @@
-/* DSA Section Cards – Match Projects */
+/* Ensure DSA cards match Projects exactly */
 .dsa-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -9,7 +9,7 @@
 
 .dsa-cards .card {
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 18px;
   padding: 16px;
   display: flex;
@@ -20,22 +20,9 @@
 
 .dsa-cards .card:hover {
   transform: translateY(-3px);
-  border-color: rgba(124, 92, 255, 0.45);
+  border-color: rgba(124,92,255,.45);
 }
 
-.dsa-cards .card h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.dsa-cards .card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.dsa-cards .card .actions {
-  margin-top: auto;
-  display: flex;
-  gap: 10px;
-}
+.dsa-cards .card h3 { margin:0; font-size:18px; }
+.dsa-cards .card p { margin:0; font-size:14px; color:var(--muted); }
+.dsa-cards .card .actions { margin-top:auto; display:flex; gap:10px; }
