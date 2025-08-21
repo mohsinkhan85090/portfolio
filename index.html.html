@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohsin Khan — AI/ML & Software Developer</title>
+  <meta name="description" content="Mohsin Khan — Artificial Intelligence & Machine Learning student. Projects: Legal Chatbot (India), Yoga-AI, VoiceBrowse (Chrome Extension), Phishing Detection, DSA-Solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-nku1d3" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --bg: #0f1115;           /* close to Wilson's dark theme */
+      --card: #151822;
+      --text: #e6e6e6;
+      --muted: #a7a7a7;
+      --accent: #7c5cff;       /* purple accent */
+      --accent-2: #00e5ff;     /* cyan accent */
+      --ring: rgba(124,92,255,.35);
+    }
+    * { box-sizing: border-box }
+    html, body { margin: 0; padding: 0; background: radial-gradient(1200px 800px at 80% -20%, rgba(124,92,255,.15), transparent 60%), radial-gradient(800px 600px at -10% 20%, rgba(0,229,255,.12), transparent 60%), var(--bg); color: var(--text); font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; scroll-behavior: smooth }
+    a { color: inherit; text-decoration: none }
+    .container { max-width: 1060px; margin: 0 auto; padding: 0 20px }
+    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(8px); background: rgba(15,17,21,.55); border-bottom: 1px solid rgba(255,255,255,.06); z-index: 40 }
+    nav { display: flex; align-items: center; justify-content: space-between; height: 64px }
+    nav .brand { font-weight: 700; letter-spacing: .5px }
+    nav .links a { margin-left: 18px; font-weight: 500; color: var(--muted) }
+    nav .links a:hover { color: #fff }
+
+    /* Hero */
+    .hero { padding: 96px 0 72px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center }
+    .hero h1 { font-size: clamp(28px, 6vw, 48px); line-height: 1.1; margin: 0 0 10px }
+    .hero h1 .highlight { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent }
+    .hero p { color: var(--muted); margin: 12px 0 24px }
+    .hero .cta { display: flex; gap: 12px; flex-wrap: wrap }
+    .button { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #0c0e12; border: none; padding: 12px 16px; border-radius: 14px; font-weight: 700; box-shadow: 0 0 0 0 var(--ring); transition: transform .15s ease, box-shadow .2s ease }
+    .button:hover { transform: translateY(-1px); box-shadow: 0 6px 22px -6px var(--ring) }
+    .button.ghost { background: rgba(255,255,255,.06); color: #fff; border: 1px solid rgba(255,255,255,.12) }
+
+    .photo-wrap { display:flex; align-items:center; justify-content:center }
+    .photo { width: 220px; height: 220px; border-radius: 24px; background: linear-gradient(145deg, #1b1f2b, #0b0d12); border: 1px solid rgba(255,255,255,.06); box-shadow: inset 0 0 0 1px rgba(255,255,255,.04), 0 20px 60px -25px rgba(124,92,255,.3) }
+    .photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 24px }
+
+    section { padding: 72px 0 }
+    .section-title { font-size: 26px; margin: 0 0 10px }
+    .section-sub { color: var(--muted); margin-top: 0 }
+
+    /* Skills */
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px }
+    .chip { padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08); font-weight: 600; font-size: 13px }
+
+    /* Cards */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; margin-top: 22px }
+    .card { background: var(--card); border: 1px solid rgba(255,255,255,.08); border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 12px; transition: transform .15s ease, border-color .2s ease }
+    .card:hover { transform: translateY(-3px); border-color: rgba(124,92,255,.45) }
+    .card h3 { margin: 0; font-size: 18px }
+    .card p { margin: 0; color: var(--muted); font-size: 14px }
+    .card .actions { margin-top: auto; display: flex; gap: 10px }
+    .small { font-size: 12px; color: var(--muted) }
+
+    /* Timeline */
+    .timeline { border-left: 2px dashed rgba(255,255,255,.15); padding-left: 16px; margin-top: 18px }
+    .timeline .item { margin: 14px 0 }
+    .timeline .item h4 { margin: 0 0 4px }
+    .timeline .item .where { color: var(--muted); font-size: 14px }
+
+    footer { padding: 28px 0 48px; border-top: 1px solid rgba(255,255,255,.06); color: var(--muted) }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; text-align: center }
+      .hero .cta { justify-content: center }
+      .photo-wrap { order: -1; margin-bottom: 12px }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Mohsin<span style="color:var(--accent)">.</span></div>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero container" id="home">
+    <div>
+      <h1>Hi, I’m <span class="highlight">Mohsin Khan</span><br /><span id="typed"></span></h1>
+      <p>Artificial Intelligence & Machine Learning student from Kanpur, passionate about building real-world products across AI, web, and cloud. From <strong>legal rights chatbots</strong> to <strong>phishing detection</strong> and a <strong>voice-controlled browser extension</strong>, I love shipping things that help people.</p>
+      <div class="cta">
+        <a class="button" href="assets/Mohsin_Khan_Resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Resume</a>
+        <a class="button ghost" href="#projects"><i class="fa-solid fa-briefcase"></i> View Projects</a>
+      </div>
+      <p class="small" style="margin-top:10px">Based in Kanpur • Open to SDE/AI internships</p>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo">
+        <!-- Replace with your photo; suggested size ~600x600 -->
+        <img src="https://avatars.githubusercontent.com/u/182193703?v=4" alt="Mohsin Khan" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="container" id="about">
+    <h2 class="section-title">About</h2>
+    <p class="section-sub">AI/ML student • Aspiring Software Developer • Cloud enthusiast</p>
+    <p>I’m a self‑driven and curious developer, currently pursuing B.Tech (AIML). I enjoy turning ideas into useful tools—like <em>NyayaBot</em> for Indian legal rights, a <em>Yoga posture AI</em> for real‑time feedback, and <em>VoiceBrowse</em>, a Chrome extension that lets you navigate with your voice. I’m comfortable across the stack: Python/Flask, Java, JS, and modern web tooling.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="container" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-sub">Tech I use and enjoy</p>
+    <div class="chips">
+      <span class="chip">Python</span>
+      <span class="chip">Java</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Flask</span>
+      <span class="chip">HTML & CSS</span>
+      <span class="chip">Tailwind</span>
+      <span class="chip">Firestore</span>
+      <span class="chip">RAG · Gemini API</span>
+      <span class="chip">Scikit‑learn</span>
+      <span class="chip">Pandas · NumPy</span>
+      <span class="chip">Git & GitHub</span>
+      <span class="chip">Chrome Extensions</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="container" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">Selected work</p>
+    <div class="grid">
+      <article class="card">
+        <h3>⚖️ Legal Chatbot (India)</h3>
+        <p>AI‑powered legal advisor that returns IPC sections, rights, and guidance with RAG (Gemini) over Firestore data.</p>
+        <p class="small">Python • Flask • Firestore • RAG</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/mohsinkhan85090/Legal-Chatbot" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+          <a class="button ghost" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>🧘 Yoga‑AI</h3>
+        <p>Pose‑estimation based feedback for better alignment and form during yoga practice.</p>
+        <p class="small">Python • CV • ML</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/mohsinkhan85090/Yoga-Ai" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+          <a class="button ghost" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>🗣️ VoiceBrowse</h3>
+        <p>Chrome extension for hands‑free browsing—navigate tabs, bookmarks, and talk to AI as you surf.</p>
+        <p class="small">JavaScript • Chrome API</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/mohsinkhan85090/VoiceBrowse" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+          <a class="button ghost" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>🛡️ Phishing Detection</h3>
+        <p>URL analysis + ML model to detect phishing attempts in real time.</p>
+        <p class="small">Python • ML • Flask</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/mohsinkhan85090/phishing-Detection" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+          <a class="button ghost" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Live</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>📘 DSA‑Solutions (Java)</h3>
+        <p>Personal collection of LeetCode‑style solutions with clean explanations and patterns.</p>
+        <p class="small">Java • DSA</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/mohsinkhan85090/DSA-Solutions" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / EDUCATION -->
+  <section class="container" id="experience">
+    <h2 class="section-title">Experience & Education</h2>
+    <p class="section-sub">Highlights</p>
+    <div class="timeline">
+      <div class="item">
+        <h4>Web Development Intern — CODSOFT</h4>
+        <div class="where">Oct 2024 – Nov 2024</div>
+      </div>
+      <div class="item">
+        <h4>Machine Learning Training — PSIT, Kanpur</h4>
+        <div class="where">6‑week online training • 55% in final assessment</div>
+      </div>
+      <div class="item">
+        <h4>B.Tech — Artificial Intelligence & Machine Learning</h4>
+        <div class="where">PSIT, Kanpur • Ongoing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="container" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-sub">Let’s build something</p>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fa-solid fa-envelope"></i> Email</h3>
+        <p><a href="mailto:mohsinkhanaiml@gmail.com">mohsinkhanaiml@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-brands fa-github"></i> GitHub</h3>
+        <p><a href="https://github.com/mohsinkhan85090" target="_blank" rel="noopener">github.com/mohsinkhan85090</a></p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-brands fa-linkedin"></i> LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/mohsin-khan-aiml/" target="_blank" rel="noopener">linkedin.com/in/mohsin-khan-aiml</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <span>© <span id="year"></span> Mohsin Khan. Built with ♥ and caffeine.</span>
+        <div style="display:flex;gap:12px">
+          <a href="https://github.com/mohsinkhan85090" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mohsin-khan-aiml/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal typing effect without external libs -->
+  <script>
+    const roles = [
+      'AI/ML Student',
+      'Aspiring Software Developer',
+      'Cloud & Web Enthusiast'
+    ];
+    const el = document.getElementById('typed');
+    let i = 0, j = 0, forward = true;
+    function tick() {
+      const word = roles[i];
+      if (forward) {
+        j++;
+        if (j === word.length + 1) { forward = false; setTimeout(tick, 1100); return; }
+      } else {
+        j--;
+        if (j === 0) { forward = true; i = (i + 1) % roles.length; }
+      }
+      el.textContent = word.slice(0, j);
+      setTimeout(tick, forward ? 75 : 45);
+    }
+    tick();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
