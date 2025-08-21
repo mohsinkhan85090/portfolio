@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center; gap: 15px;">
 
-  <img src="assets/mohsin.png" alt="Mohsin Khan" width="150" style="border-radius: 10px;" />
+  <img src="assets/1.png" alt="Mohsin Khan" width="150" style="border-radius: 10px;" />
 
   <div>
     <h1>Mohsin Khan — AI/ML & Software Developer</h1>
