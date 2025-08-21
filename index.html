@@ -1,83 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohsin Khan | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <h1 class="logo">Mohsin Khan</h1>
-    <ul class="nav-links">
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#dsa">DSA Solutions</a></li>
-      <li><a href="#cp">Competitive Programming</a></li>
-    </ul>
-    <button id="theme-toggle">🌙</button>
-  </nav>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mohsin<span> Khan</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="assets/1.png" alt="Profile Photo" class="hero-img">
-    <h2>Hello, I'm Mohsin 👋</h2>
-    <p>2nd Year AIML Student | Aspiring SDE & AI Engineer</p>
-    <a href="#projects" class="btn">Explore My Work</a>
+<section class="hero">
+  <div class="overlay"></div> <!-- Dark overlay for background -->
+  <div class="hero-content">
+    <img src="images/mohsin.jpg" alt="Mohsin Khan" class="mohsin-img" />
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Mohsin</span></h1>
+      <p>Aspiring Software Engineer & AI/ML Enthusiast</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </div>
+</section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a B.Tech AIML student passionate about building impactful solutions 
+      in Web Development, AI/ML, and Backend Engineering. My goal is to secure 
+      an SDE internship at a top MNC.
+    </p>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Flask</div>
+      <div class="skill-card">Firestore</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">Web Development</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
   <section id="projects" class="section">
-    <h2>🚀 Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3><a href="https://github.com/mohsinkhan85090/Legal-Chatbot-AI" target="_blank">Legal Chatbot</a></h3>
-        <p>AI-powered legal advisor for Indian laws using Flask, Firestore & Gemini API.</p>
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Legal Rights Explorer (India)</h3>
+        <p>Web app to guide users on their legal rights with IPC references.</p>
+        <a href="#" target="_blank">View Project</a>
       </div>
-      <div class="card">
-        <h3><a href="#">Legal Rights Explorer</a></h3>
-        <p>Web app showing IPC sections & rights for real-life situations.</p>
+      <div class="project-card">
+        <h3>AI Study Buddy Chatbot</h3>
+        <p>AI-powered chatbot to help students learn efficiently.</p>
+        <a href="#" target="_blank">View Project</a>
       </div>
-      <div class="card">
-        <h3><a href="#">Grievance Redressal System API</a></h3>
-        <p>Java backend project to handle complaints & grievance tracking.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- DSA Section -->
-  <section id="dsa" class="section">
-    <h2>📘 DSA Solutions</h2>
-    <div class="grid">
-      <div class="card">
-        <h3><a href="https://github.com/mohsinkhan85090/DSA-Solutions" target="_blank">View My DSA Repo</a></h3>
-        <p>LeetCode, GFG, and Interview problems solved in Java & Python.</p>
+      <div class="project-card">
+        <h3>Grievance Redressal API</h3>
+        <p>Java backend system to handle student grievances effectively.</p>
+        <a href="#" target="_blank">View Project</a>
       </div>
     </div>
   </section>
 
-  <!-- Competitive Programming -->
-  <section id="cp" class="section">
-    <h2>🏆 Competitive Programming</h2>
-    <div class="grid">
-      <div class="card">
-        <h3><a href="https://leetcode.com/" target="_blank">LeetCode</a></h3>
-        <p>Track my LeetCode submissions and progress.</p>
-      </div>
-      <div class="card">
-        <h3><a href="https://www.hackerrank.com/" target="_blank">HackerRank</a></h3>
-        <p>Check out my HackerRank profile & solved challenges.</p>
-      </div>
-      <div class="card">
-        <h3><a href="#">Codeforces</a></h3>
-        <p>Competitive programming problems & contests.</p>
-      </div>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:mohsinkhan85090@gmail.com">mohsinkhan85090@gmail.com</a></p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Mohsin Khan | Built with ❤️</p>
+    <p>© 2025 Mohsin Khan | All Rights Reserved</p>
   </footer>
 
   <script src="script.js"></script>
