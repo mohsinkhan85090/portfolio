@@ -1,4 +1,11 @@
-<!-- Profile Photo -->
+
+<p align="center">
+  <img src="assets/mohsin.png" alt="Mohsin Khan" width="150" />
+</p>
+
+<p align="center">
+  <a href="assets/MohsinKhan_Resume_2025.pdf">📄 View My Resume</a>
+</p><!-- Profile Photo -->
 ![Mohsin Khan](assets/mohsin.jpg)
 
 # Mohsin Khan — AI/ML & Software Developer
