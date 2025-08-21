@@ -1,4 +1,4 @@
-<table>
+
   <tr>
     <td style="vertical-align: middle; width: 160px;">
       <img src="assets/mohsin.png" alt="Mohsin Khan" width="150" />
@@ -12,4 +12,3 @@
       </p>
     </td>
   </tr>
-</table>
