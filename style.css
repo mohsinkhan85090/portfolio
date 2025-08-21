@@ -1,38 +1,41 @@
-/* DSA Section Cards */
+/* DSA Section Cards – Match Projects */
 .dsa-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px; /* slightly bigger gap for breathing space */
-  margin-top: 24px;
+  gap: 18px;
+  margin-top: 22px;
   justify-items: center;
 }
 
-/* Card Styling */
 .dsa-cards .card {
-  background: var(--card); /* consistent theme */
+  background: var(--card);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px; /* slightly smoother */
-  padding: 18px;
+  border-radius: 18px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* subtle shadow */
-  transition: 
-    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
+  gap: 12px;
+  transition: transform .15s ease, border-color .2s ease;
 }
 
-/* Hover Effects */
 .dsa-cards .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   border-color: rgba(124, 92, 255, 0.45);
-  box-shadow: 0 10px 20px rgba(124, 92, 255, 0.15); /* glowing effect */
 }
 
-/* Optional: smooth inner elements appearance on hover */
-.dsa-cards .card:hover * {
-  transition: color 0.25s ease, transform 0.25s ease;
+.dsa-cards .card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.dsa-cards .card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.dsa-cards .card .actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
 }
