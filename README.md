@@ -2,8 +2,7 @@
     <h1>Mohsin Khan — AI/ML & Software Developer</h1>
     <p>Welcome to my personal portfolio! 👋</p>
     <p>
-      🌐 <a https://mohsinkhan85090.github.io/portfolio/">Live Portfolio</a> | 
+      🌐 <a href="https://mohsinkhan85090.github.io/portfolio/" target="_blank">Live Portfolio</a> | 
     </p>
-  </div>
-
 </div>
+
